@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MDSAPP</groupId>
+  <artifactId>MDS</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <!--<parent>
+        <groupId>com.oracle.soa</groupId>
+        <artifactId>sar-common</artifactId>
+        <version>12.1.3-0-0</version>
+    </parent>-->
+  <properties>
+    <!-- Server -->
+    <wl.server.url>http://localhost:33000</wl.server.url>
+    <wl.user>weblogic</wl.user>
+    <wl.pass>Welcome1</wl.pass>
+    <wl.home.mdw>C:\Oracle\MDWJdev</wl.home.mdw>
+    <wl.home.mdw.jdev>C:\Oracle\MDWJdev\jdeveloper</wl.home.mdw.jdev>
+    <wl.home.mdw.jdk>C:\Oracle\MDWJdev\jdeveloper</wl.home.mdw.jdk>
+    <wl.home.mdw.wls>C:\Oracle\MDWJdev\wlserver_10.3</wl.home.mdw.wls>
+  </properties>
+  <profiles>
+    <profile>
+      <id>deployMDSServer1</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.7</version>
+            <dependencies>
+              <dependency>
+                <groupId>ant-contrib</groupId>
+                <artifactId>ant-contrib</artifactId>
+                <version>1.0b3</version>
+                <exclusions>
+                  <exclusion>
+                    <groupId>ant</groupId>
+                    <artifactId>ant</artifactId>
+                  </exclusion>
+                </exclusions>
+              </dependency>
+            </dependencies>
+            <executions>
+              <execution>
+                <id>deployMDSServer1</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <tasks>
+                    <ant antfile="${basedir}\build.xml">
+                      <property name="wl.serverURL" value="${wl.server.url}"/>
+                      <property name="wl.user" value="${wl.user}"/>
+                      <property name="wl.password" value="${wl.pass}"/>
+                      <property name="mds.reposistory" value="${basedir}/src/main/resources/mds/apps"/>
+                      <property name="tmp.output.dir" value="${basedir}"/>
+                      <property name="wn.bea.home" value="${wl.home.mdw}"/>
+                      <property name="oracle.home" value="${wl.home.mdw.jdev}"/>
+                      <property name="java.passed.home" value="${wl.home.mdw.jdk}"/>
+                      <property name="wl_home" value="${wl.home.mdw.wls}"/>
+                      <target name="deployMDS"/>
+                    </ant>
+                  </tasks>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
