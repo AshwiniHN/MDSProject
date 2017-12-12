@@ -10,8 +10,8 @@
       <directory>../apps</directory>
       <outputDirectory>/</outputDirectory>
 	  <includes>
-        <!--<include>dvm/**</include>
-		<include>SOA-INFRA/**</include>
+        <include>dvm/**</include>
+		<!--<include>SOA-INFRA/**</include>
 		<include>WSDL/**</include>
 		<include>XREF/**</include>
 		<include>XSD/**</include>
