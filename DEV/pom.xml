@@ -64,7 +64,6 @@
     </properties>
     <build>
         <plugins>
-	    <!-- plugin om te zorgen dat de apps directory gezipt wordt voor de MDS -->
 	    <plugin>
 			<artifactId>maven-assembly-plugin</artifactId>
 			<version>2.4.1</version>
@@ -84,6 +83,19 @@
 				</execution>
 		     </executions>
 		</plugin>
+		<plugin>
+                	<groupId>org.apache.maven.plugins</groupId>
+                	<artifactId>maven-deploy-plugin</artifactId>
+                	<version>2.6</version>
+                	<configuration>
+                    		<groupId>${project.groupId}</groupId>
+                    		<artifactId>${project.artifactId}</artifactId>
+                    		<version>${project.version}</version>
+                    		<packaging>zip</packaging>
+                    		<file>sca-${project.artifactId}_rev1.0.zip</file>
+                    		<url>${serverUrl}</url>
+               		</configuration>
+              </plugin>
         </plugins>
     </build>
 </project>
