@@ -3,7 +3,7 @@
   <id>MDS_rev1.0</id>
   <baseDirectory>/</baseDirectory>
   <formats>
-    <format>jar</format>
+    <format>zip</format>
   </formats>
   <fileSets>
 	<fileSet>
