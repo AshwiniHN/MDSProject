@@ -10,7 +10,7 @@
     <groupId>MDSProjectTest</groupId>
     <artifactId>MDS</artifactId>
     <version>1.0</version>
-    <packaging>sar</packaging>
+   <!-- <packaging>sar</packaging>-->
     
     <!--
            The parent points to the common SOA parent POM.  That is a special POM that is
