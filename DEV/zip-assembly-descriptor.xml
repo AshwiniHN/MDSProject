@@ -10,12 +10,13 @@
       <directory>../../../DEV/apps</directory>
       <outputDirectory>/</outputDirectory>
 	  <includes>
-        <include>dvm/**</include>
+        <!--<include>dvm/**</include>
 		<include>SOA-INFRA/**</include>
 		<include>WSDL/**</include>
 		<include>XREF/**</include>
 		<include>XSD/**</include>
-		<include>XSL/**</include>
+		<include>XSL/**</include>-->
+		<include>*/**</include>
       </includes>
     </fileSet>
   </fileSets>
