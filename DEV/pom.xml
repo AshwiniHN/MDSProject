@@ -95,7 +95,7 @@
                     		<artifactId>${project.artifactId}</artifactId>
                     		<version>${project.version}</version>
                     		<packaging>zip</packaging>
-                    		<file>/target</file>
+                    		<file>C:\Users\ahaverin\.jenkins\workspace\MDS Test\DEV\target\sca-MDS_rev1.0.zip</file>
                     		<url>${serverUrl}</url>
                		</configuration>
               </plugin>
