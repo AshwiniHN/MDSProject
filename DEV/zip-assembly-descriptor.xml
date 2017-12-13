@@ -7,8 +7,8 @@
   </formats>
   <fileSets>
 	<fileSet>
-      <directory>/DEV/apps</directory>
-      <outputDirectory>/</outputDirectory>
+      <directory>/apps</directory>
+      <outputDirectory>/apps</outputDirectory>
 	  <includes>
         <!--<include>dvm/**</include> -->
 		<!--<include>SOA-INFRA/**</include>
