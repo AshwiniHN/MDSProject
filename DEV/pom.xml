@@ -95,7 +95,7 @@
                     		<artifactId>${project.artifactId}</artifactId>
                     		<version>${project.version}</version>
                     		<packaging>zip</packaging>
-                    		<file>${Workspace}/DEV/target</file>
+                    		<file>/target</file>
                     		<url>${serverUrl}</url>
                		</configuration>
               </plugin>
