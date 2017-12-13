@@ -16,7 +16,7 @@
 		<include>XREF/**</include>
 		<include>XSD/**</include>
 		<include>XSL/**</include>-->
-		<include>*/**</include>
+		<include>**/*</include>
       </includes>
     </fileSet>
   </fileSets>
