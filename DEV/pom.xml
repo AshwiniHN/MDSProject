@@ -83,7 +83,7 @@
 				</execution>
 		     </executions>
 		</plugin>
-		<!--<plugin>
+		<plugin>
                 	<groupId>org.apache.maven.plugins</groupId>
                 	<artifactId>maven-deploy-plugin</artifactId>
                 	<version>2.6</version>
@@ -98,7 +98,7 @@
                     		<file>C:\Users\ahaverin\.jenkins\workspace\MDS Test\DEV\target\sca-MDS_rev1.0.zip</file>
                     		<url>${serverUrl}</url>
                		</configuration>
-              </plugin>-->
+              </plugin>
 	<plugin>
 		<groupId>com.oracle.soa.plugin</groupId>
                 <artifactId>oracle-soa-plugin</artifactId>
