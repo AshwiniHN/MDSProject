@@ -106,7 +106,7 @@
                 <configuration>
                     <compositeName>${project.artifactId}</compositeName>
                     <composite>${scac.input}</composite>
-                    <sarLocation>${scac.output.dir}/sca-${project.artifactId}_rev${composite.revision}.jar</sarLocation>
+                    <sarLocation>${project.basedir}/target/sca-MDS_rev1.0.zip</sarLocation>
                     <serverUrl>${serverUrl}</serverUrl>
                     <user>${user}</user>
                     <password>${password}</password>
