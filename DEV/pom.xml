@@ -116,7 +116,7 @@
                     <scacInputDir>${scac.input.dir}</scacInputDir>                    
                     <input>${input}</input> 
                 </configuration>
-                < extensions=true is needed to use the custom sar packaging type >
+                <!-- extensions=true is needed to use the custom sar packaging type -->
                 <extensions>true</extensions>
 	</plugin>
         </plugins>
