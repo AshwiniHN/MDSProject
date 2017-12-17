@@ -110,7 +110,7 @@
                     <serverUrl>${serverUrl}</serverUrl>
                     <user>${user}</user>
                     <password>${password}</password>
-                    < Note: compositeRevision is needed to package, revision is needed to undeploy 
+                    <!-- Note: compositeRevision is needed to package, revision is needed to undeploy -->
                     <compositeRevision>${composite.revision}</compositeRevision>
                     <revision>${composite.revision}</revision>
                     <scacInputDir>${scac.input.dir}</scacInputDir>                    
